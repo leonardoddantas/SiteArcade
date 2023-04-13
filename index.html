@@ -10,19 +10,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="img/logo.png" alt="logo"></a>
-            <div class="mobile-menu">
-                <span class="material-symbols-outlined">menu</span>
-            </div>
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
+        <nav id="nav">
             <ul class="nav-links">
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Promotion</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><span class="material-symbols-outlined">account_circle</span><a href="#">Login</a></li>
-                <li><span class="material-symbols-outlined">add_shopping_cart</span></li>
+                <li><a class="material-symbols-outlined">account_circle</a><a href="#">Login</a></li>
+                <li><a class="material-symbols-outlined">add_shopping_cart</a></li>
             </ul>
+            <button class="material-symbols-outlined" id="btn-mobile" onclick="toggleMenu()">menu</button>
         </nav>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
