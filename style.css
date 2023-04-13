@@ -1,0 +1,49 @@
+:root {
+    --color_0: rgb(60, 38, 93);
+    --color_1: rgb(57, 5, 61);
+    --color_2: rgb(36, 21, 60);
+    --color_3: rgb(108, 54, 222);
+    --color-font: rgb(255, 255, 255);
+    --font: montserrat,sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font);
+}
+header {
+   background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
+   color: var(--color-font);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.mobile-menu {
+    display: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 32px;
+}
+a {
+    text-decoration: none;
+    color: var(--color-font);
+}
+a:hover {
+    color: var(--color_3);
+}
+@media (max-width: 999px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        flex-direction: column;
+    }
+}
