@@ -11,12 +11,20 @@
 <body>
     <header>
         <a href="#"><img src="img/logo.png" alt="logo"></a>
-        <nav id="nav">
-            <ul class="nav-links">
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Promotion</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="material-symbols-outlined">account_circle</a><a href="#">Login</a></li>
+        <nav>
+            <ul class="menu">
+                <li id="liProducts"><a href="#">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Consoles</a></li>
+                        <li><a href="#">Controls</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li id="liLogin"><a href="#">Login</a></li>
                 <li><a class="material-symbols-outlined">add_shopping_cart</a></li>
             </ul>
             <button class="material-symbols-outlined" id="btn-mobile" onclick="toggleMenu()">menu</button>

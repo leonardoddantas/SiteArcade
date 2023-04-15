@@ -3,6 +3,7 @@
     --color_1: rgb(57, 5, 61);
     --color_2: rgb(36, 21, 60);
     --color_3: rgb(108, 54, 222);
+    --color_4: rgb(11, 3, 28);
     --color-font: rgb(255, 255, 255);
     --font: montserrat, sans-serif;
 }
@@ -13,12 +14,60 @@
     font-family: var(--font);
 }
 
+body {
+    background-image: url(img/a.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header {
     background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
     box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.768);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 5%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--color-font);
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: var(--color_3);
+}
+
+#liProducts:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--color_4);
+    list-style: none;
+    border-radius: 2px;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.dropdown a {
+    display: block;
+}
+
+#liLogin {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
 }
 
 #btn-mobile {
@@ -28,29 +77,35 @@ header {
     border: none;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-font);
-}
-
-a:hover {
-    color: var(--color_3);
-}
-
 @media (max-width: 700px) {
-    .nav-links {
-        display: none;
-    }
+
     #btn-mobile {
         display: block;
     }
-    #nav.active .nav-links{
+
+    .menu {
         display: flex;
+        align-items: baseline;
+        position: absolute;
+        width: 100%;
+        top: 115px;
+        right: 0;
+        background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
+        flex-direction: column;
+        height: 0;
+        transition: 0.5s;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    nav.active .menu {
+        height: calc(50vh - 125px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu li {
+        padding: 0 7%;
     }
 }
