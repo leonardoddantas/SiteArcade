@@ -6,13 +6,15 @@
     --color_4: rgb(11, 3, 28);
     --color_5: rgb(132,85,230);
     --color-font: rgb(255, 255, 255);
-    --font: montserrat, sans-serif;
+    --font_1: montserrat, sans-serif;
+    --font_2: normal normal bold 70px/1em montserrat,sans-serif;
+    --font_3: normal normal bold 22px/1.5em roboto-thin,roboto,sans-serif;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: var(--font);
+    font-family: var(--font_1);
 }
 
 header {
@@ -82,11 +84,52 @@ ul li a:hover {
     height: 85vh;
 }
 
-#card {
-    background-color: var(--color_5);
-
+.grandiente {
+    background-color: rgba(0, 0, 0, 0.40);
 }
 
+.informar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 90%;
+    padding-top: 5%;
+}
+#card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+    height: 50%;
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.900);
+    border-radius: 20px;
+    padding: 2% 0px 4% 4%;
+    background-color: var(--color_5);
+    color: var(--color-font);
+    font-size: 1.5vw;
+    font-family: var(--font_3);
+}
+
+#prominence_cyberKid {
+    font-size: 4vw;
+    font-family: var(--font_2);
+}
+
+#card button {
+    color: var(--color_3);
+    font-size: 1vw;
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 2%;
+    width: 30%;
+}
+
+
+#card-img img {
+    width: 70%;
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.900);
+    border-radius: 20px;
+}
 @media (max-width: 700px) {
 
     #btn-mobile {
@@ -117,5 +160,30 @@ ul li a:hover {
 
     .menu li {
         padding: 0 7%;
+    }
+
+    .background-img {
+        height: 100vh;
+    }
+
+    .informar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card-img {
+        display: flex;
+        justify-content: center;
+    }
+    #card {
+        width: 65%;
+        font-size: 4vw;
+    }
+    #prominence_cyberKid {
+        font-size: 7vw;
+    }
+    
+    #card button {
+        font-size: 2vw;
     }
 }
