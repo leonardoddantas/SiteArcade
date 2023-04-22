@@ -1,0 +1,28 @@
+.background-img {
+    height: 170vh;
+}
+
+.grandiente {
+    height: 170vh;
+}
+.informar {
+    flex-direction: column;
+    align-items: center;
+}
+
+#card {
+    width: 77%;
+    font-size: 4vw;
+}
+
+#card button {
+    font-size: 2.5vw;
+}
+
+#prominence_cyberKid {
+    font-size: 8vw;
+}
+
+#card-img {
+    width: 80%;
+}
