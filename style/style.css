@@ -4,11 +4,11 @@
     --color_2: rgb(36, 21, 60);
     --color_3: rgb(108, 54, 222);
     --color_4: rgb(11, 3, 28);
-    --color_5: rgb(132,85,230);
+    --color_5: rgb(132, 85, 230);
     --color-font: rgb(255, 255, 255);
     --font_1: montserrat, sans-serif;
-    --font_2: normal normal bold 70px/1em montserrat,sans-serif;
-    --font_3: normal normal bold 22px/1.5em roboto-thin,roboto,sans-serif;
+    --font_2: normal normal bold 70px/1em montserrat, sans-serif;
+    --font_3: normal normal bold 22px/1.5em roboto-thin, roboto, sans-serif;
 }
 
 * {
@@ -76,7 +76,7 @@ ul li a:hover {
 }
 
 .background-img {
-    background-image: url(img/a.webp);
+    background-image: url(../img/a.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -96,6 +96,7 @@ ul li a:hover {
     height: 90%;
     padding-top: 5%;
 }
+
 #card {
     display: flex;
     justify-content: center;
@@ -132,53 +133,8 @@ ul li a:hover {
     box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.900);
     border-radius: 20px;
 }
-@media (max-width: 800px) {
 
-    #btn-mobile {
-        display: block;
-    }
-
-    .menu {
-        display: flex;
-        align-items: baseline;
-        position: absolute;
-        width: 100%;
-        top: 115px;
-        right: 0;
-        background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
-        flex-direction: column;
-        height: 0;
-        transition: 0.5s;
-        z-index: 1;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    nav.active .menu {
-        height: calc(50vh - 125px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    .menu li {
-        padding: 0 7%;
-    }
-
-    .informar {
-        align-items: center;
-    }
-    
-    #card {
-        width: 90%;
-        font-size: 4vw;
-    }
-    #card button {
-        font-size: 3vw;
-    }
-    #prominence_cyberKid {
-        font-size: 8vw;
-    }
-    #card-img {
-       display: none;
-    }
+.Best-Selling-Product {
+    background-color: black;
+    height: 100vh;
 }
