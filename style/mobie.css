@@ -26,3 +26,11 @@
 #card-img {
     width: 80%;
 }
+
+.group-cards-category {
+    flex-direction: column;
+}
+
+.card-category img{
+    width: 90vw;
+}
