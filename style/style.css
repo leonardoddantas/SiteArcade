@@ -5,6 +5,9 @@
     --color_3: rgb(108, 54, 222);
     --color_4: rgb(11, 3, 28);
     --color_5: rgb(132, 85, 230);
+    --color_6: rgb(35,34,35);
+    --color_7: rgb(22, 22, 22);
+    --color_8: rgb(43, 42, 43);
     --color-font: rgb(255, 255, 255);
     --color-buttom: rgb(255, 255, 255);
     --font_1: montserrat, sans-serif;
@@ -135,18 +138,18 @@ ul li a:hover {
     border-radius: 20px;
 }
 
-.Best-Selling-Product {
+.best-Selling-Product {
     background-color: black;
     height: 100vh;
-    padding: 5h0px;
+    padding: 80px;
 }
 
-.Best-Selling-Product h2 {
+.titles-Section-Products {
     color: var(--color-font);
     font-size: 3em;
 }
 
-.Best-Selling-Product button {
+.best-Selling-Product button {
     background-color: var(--color-buttom);
     color: var(--color_5);
     border-radius: 50px;
@@ -155,7 +158,7 @@ ul li a:hover {
     font-size: 1.3em;
 }
 
-.Best-Selling-Product header {
+.best-Selling-Product header {
     display: flex;
     justify-content: space-between;
 }
@@ -190,4 +193,35 @@ ul li a:hover {
 .container img {
     object-fit: cover;
     height: 350px;
+}
+
+.category-Section {
+    background-image: linear-gradient(8deg, var(--color_8), var(--color_6), var(--color_7));
+    padding: 80px;
+}
+
+.group-cards-category {
+    display: flex;
+    gap: 5vw;
+    padding-top: 80px;
+}
+
+.card-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-category img:hover {
+    color: blue;
+}
+.card-category img{
+    width: 25vw;
+    border-radius: 30px;
+}
+
+.card-category p {
+    color: var(--color-font);
+    font-size: 1.5em;
 }
