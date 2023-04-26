@@ -5,7 +5,7 @@
     --color_3: rgb(108, 54, 222);
     --color_4: rgb(11, 3, 28);
     --color_5: rgb(132, 85, 230);
-    --color_6: rgb(35,34,35);
+    --color_6: rgb(35, 34, 35);
     --color_7: rgb(22, 22, 22);
     --color_8: rgb(43, 42, 43);
     --color-font: rgb(255, 255, 255);
@@ -144,7 +144,7 @@ ul li a:hover {
     padding: 80px;
 }
 
-.titles-Section-Products {
+h2 {
     color: var(--color-font);
     font-size: 3em;
 }
@@ -162,11 +162,13 @@ ul li a:hover {
     display: flex;
     justify-content: space-between;
 }
+
 .carousel {
     display: flex;
     align-items: center;
     max-width: 1200px;
 }
+
 .carousel span {
     position: absolute;
     height: 46px;
@@ -178,12 +180,15 @@ ul li a:hover {
     border-radius: 50%;
     transform: translateY(-50%);
 }
+
 .carousel span:first-child {
     left: -23px;
 }
+
 .carousel span:last-child {
     right: -23px;
 }
+
 .carousel .container {
     white-space: nowrap;
     overflow: hidden;
@@ -213,10 +218,7 @@ ul li a:hover {
     gap: 20px;
 }
 
-.card-category img:hover {
-    color: blue;
-}
-.card-category img{
+.card-category img {
     width: 25vw;
     border-radius: 30px;
 }
@@ -224,4 +226,44 @@ ul li a:hover {
 .card-category p {
     color: var(--color-font);
     font-size: 1.5em;
+}
+
+.section-spend-earn {
+    background-image: url(../img/b.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+#grandiente-spend-earn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.section-spend-earn h2 {
+    font-size: 4em;
+}
+
+.section-spend-earn p {
+    color: var(--color-font);
+    font-size: 1.4em;
+}
+
+.section-spend-earn button {
+    background-color: var(--color_5);
+    border-radius: 50px;
+    border-color: transparent;
+    color: var(--color-font);
+    font-size: 1.3em;
+    padding: 7px;
+    margin-top: 20px;
+}
+
+#teste {
+    height: 100vh;
+    background-color: black;
 }
