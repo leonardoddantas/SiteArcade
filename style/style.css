@@ -263,7 +263,52 @@ h2 {
     margin-top: 20px;
 }
 
-#teste {
-    height: 100vh;
-    background-color: black;
+.background-one-signature-section {
+    background-image: url(../img/d.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-font);
+}
+
+.background-one-signature-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+.background-one-signature-section form button {
+   width: 100%;
+   height: 7vh;
+   border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-color: transparent;
+}
+
+.background-one-signature-section form input {
+    width: 100%;
+    height: 7vh;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: var(--color-font);
+    border-bottom: none;
+    color: var(--color-font);
+    font-size: 2em;
+    background-color: transparent;
+ }
+
+
+.background-two-signature-section {
+    background-image: url(../img/c.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
 }
