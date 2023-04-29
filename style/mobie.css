@@ -44,6 +44,10 @@
     font-size: 1.2em;
 }
 
+.carusel img {
+    width: 100%;
+}
+
 .background-one-signature-section h2 {
     font-size: 2em;
 }

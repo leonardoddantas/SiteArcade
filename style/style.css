@@ -8,6 +8,8 @@
     --color_6: rgb(35, 34, 35);
     --color_7: rgb(22, 22, 22);
     --color_8: rgb(43, 42, 43);
+    --color_9: rgb(255, 255, 255);
+    --color_10: rgb(0, 0, 0);
     --color-font: rgb(255, 255, 255);
     --color-buttom: rgb(255, 255, 255);
     --font_1: montserrat, sans-serif;
@@ -139,9 +141,9 @@ ul li a:hover {
 }
 
 .best-Selling-Product {
-    background-color: black;
+    background-color: var(--color_10);
     height: 100vh;
-    padding: 80px;
+    padding: 50px;
 }
 
 h2 {
@@ -161,43 +163,59 @@ h2 {
 .best-Selling-Product header {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
-.carousel {
+.wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px;
 }
 
-.carousel span {
-    position: absolute;
-    height: 46px;
-    width: 46px;
+.wrapper i {
+    height: 45px;
+    width: 45px;
+    color: var(--color-font);
     cursor: pointer;
+    font-size: 2em;
     text-align: center;
-    background: white;
-    line-height: 46px;
-    border-radius: 50%;
-    transform: translateY(-50%);
+    background-color: var(--color_10);
 }
 
-.carousel span:first-child {
+.wrapper i:first-child {
     left: -23px;
+    display: none;
 }
 
-.carousel span:last-child {
+.wrapper i:last-child {
     right: -23px;
 }
 
-.carousel .container {
-    white-space: nowrap;
-    overflow: hidden;
+.wrapper .carusel {
     cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
-.container img {
+.carusel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carusel.dragging img{
+   pointer-events: none;
+}
+
+.carusel img{
+    height: 300px;
+    margin-left: 14px;
     object-fit: cover;
-    height: 350px;
+    width: calc(100% / 4);
+}
+
+.carusel img:first-child {
+    margin-left: 0px;
 }
 
 .category-Section {
