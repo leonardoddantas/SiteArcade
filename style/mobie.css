@@ -35,3 +35,27 @@
 .card-category img {
     width: 90vw;
 }
+
+.section-spend-earn h2 {
+    font-size: 2em;
+}
+
+.section-spend-earn p {
+    font-size: 1.2em;
+}
+
+.background-one-signature-section h2 {
+    font-size: 2em;
+}
+
+.background-one-signature-section form {
+    width: 80vw;
+}
+
+.background-two-signature-section {
+    height: 20vh;
+}
+
+.background-two-signature-section img {
+    width: 95vw;
+}
