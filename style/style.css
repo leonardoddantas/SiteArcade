@@ -143,7 +143,7 @@ ul li a:hover {
 .best-Selling-Product {
     background-color: var(--color_10);
     height: 100vh;
-    padding: 50px;
+    padding: 5%;
 }
 
 h2 {
@@ -163,7 +163,7 @@ h2 {
 .best-Selling-Product header {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 10%;
 }
 
 .wrapper {

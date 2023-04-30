@@ -36,6 +36,14 @@
     width: 90vw;
 }
 
+.best-Selling-Product button {
+    width: 30%;
+}
+
+.best-Selling-Product header {
+    flex-direction: column;
+    gap: 10px;
+}
 .section-spend-earn h2 {
     font-size: 2em;
 }
