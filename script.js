@@ -4,7 +4,7 @@ function toggleMenu() {
    nav.classList.toggle("active");
 }
 
-const carousel = document.querySelector(".carusel"),
+const carousel = document.querySelector(".wrapper"),
 firstImg = carousel.querySelectorAll("img")[0];
 arrowIcons = document.querySelectorAll(".wrapper i");
 
