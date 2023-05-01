@@ -165,59 +165,50 @@ h2 {
     justify-content: space-between;
     margin-top: 10%;
 }
-
 .wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.wrapper i {
-    height: 45px;
-    width: 45px;
-    color: var(--color-font);
-    cursor: pointer;
-    font-size: 2em;
-    text-align: center;
-    background-color: var(--color_10);
-}
-
-.wrapper i:first-child {
-    left: -23px;
-    display: none;
-}
-
-.wrapper i:last-child {
-    right: -23px;
-}
-
-.wrapper .carusel {
-    cursor: pointer;
     overflow: hidden;
+    cursor: pointer;
     white-space: nowrap;
     scroll-behavior: smooth;
-}
-
-.carusel.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.carusel.dragging img{
-   pointer-events: none;
-}
-
-.carusel img{
-    height: 300px;
-    margin-left: 14px;
-    object-fit: cover;
-    width: calc(100% / 4);
-}
-
-.carusel img:first-child {
-    margin-left: 0px;
-}
-
+  }
+  
+  .wrapper i {
+      height: 46px;
+      width: 46px;
+      position: absolute;
+      cursor: pointer;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 46px;
+      background-color: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+  }
+  
+  .wrapper i:first-child {
+      left: 20px;
+      display: none;
+  }
+  
+  .wrapper i:last-child {
+      right: 20px;
+  }
+  
+  .card-carusel {
+      margin: 0 10px;
+      text-align: center;
+  }
+  
+  .carusel.dragging {
+      cursor: grab;
+      scroll-behavior: auto;
+  }
+  .img-carusel{
+      width: 300px;
+      height: 300px;
+  }
 .category-Section {
     background-image: linear-gradient(8deg, var(--color_8), var(--color_6), var(--color_7));
     padding: 80px;
