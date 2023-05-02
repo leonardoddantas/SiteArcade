@@ -44,6 +44,11 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.wrapper i:first-child {
+    left: 12px;
+}
+
 .section-spend-earn h2 {
     font-size: 2em;
 }

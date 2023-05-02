@@ -87,7 +87,7 @@ ul li a:hover {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 85vh;
+    height: 80vh;
 }
 
 .grandiente {
@@ -142,7 +142,7 @@ ul li a:hover {
 
 .best-Selling-Product {
     background-color: var(--color_10);
-    height: 100vh;
+    height: 90vh;
     padding: 5%;
 }
 
@@ -155,7 +155,8 @@ h2 {
     background-color: var(--color-buttom);
     color: var(--color_5);
     border-radius: 50px;
-    width: 10%;
+    width: 15%;
+    height: 40px;
     border-color: transparent;
     font-size: 1.3em;
 }
@@ -165,6 +166,7 @@ h2 {
     justify-content: space-between;
     margin-top: 10%;
 }
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -172,43 +174,60 @@ h2 {
     cursor: pointer;
     white-space: nowrap;
     scroll-behavior: smooth;
-  }
-  
-  .wrapper i {
-      height: 46px;
-      width: 46px;
-      position: absolute;
-      cursor: pointer;
-      font-size: 1.2rem;
-      text-align: center;
-      line-height: 46px;
-      background-color: #fff;
-      border-radius: 50%;
-      transform: translateY(-50%);
-  }
-  
-  .wrapper i:first-child {
-      left: 20px;
-      display: none;
-  }
-  
-  .wrapper i:last-child {
-      right: 20px;
-  }
-  
-  .card-carusel {
-      margin: 0 10px;
-      text-align: center;
-  }
-  
-  .carusel.dragging {
-      cursor: grab;
-      scroll-behavior: auto;
-  }
-  .img-carusel{
-      width: 300px;
-      height: 300px;
-  }
+}
+
+.wrapper i {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 2em;
+    text-align: center;
+    color: var(--color-font);
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: 20px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: 20px;
+}
+
+.card-carusel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+    text-align: center;
+    color: var(--color-font);
+}
+
+.card-carusel p {
+    font-size: 1.2em;
+}
+
+.card-carusel button {
+    width: 40%;
+    padding: 4px;
+    font-size: 1.1em;
+    color: var(--color-font);
+    background-color: var(--color_3);
+}
+
+.carusel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.img-carusel {
+    width: 300px;
+    height: 300px;
+}
+
 .category-Section {
     background-image: linear-gradient(8deg, var(--color_8), var(--color_6), var(--color_7));
     padding: 80px;
