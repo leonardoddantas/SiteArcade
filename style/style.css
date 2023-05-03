@@ -363,3 +363,15 @@ h2 {
     margin-bottom: 100px;
     width: 70vw;
 }
+
+.partonefooter {
+    background-color: var(--color_10);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}

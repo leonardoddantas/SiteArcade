@@ -49,6 +49,10 @@
     gap: 10px;
 }
 
+.card-carusel button {
+    width: 60%;
+}
+
 .background-two-signature-section {
     height: 30vw;
 }
