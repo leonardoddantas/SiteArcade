@@ -76,3 +76,12 @@
 .background-two-signature-section img {
     width: 95vw;
 }
+
+.partonefooter {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-footer img {
+    width: 50vw;
+}
