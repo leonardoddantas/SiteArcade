@@ -366,12 +366,19 @@ h2 {
 
 .partonefooter {
     background-color: var(--color_10);
+    color: var(--color-font);
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 7%;
+    padding: 5%;
 }
 
 .card-footer {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.parttwofooter {
+    display: flex;
 }
