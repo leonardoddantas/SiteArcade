@@ -85,3 +85,13 @@
 .card-footer img {
     width: 50vw;
 }
+
+.parttwofooter {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+}
+
+.partthreefooter {
+    padding: 30px;
+}

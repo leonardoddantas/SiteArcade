@@ -381,4 +381,22 @@ h2 {
 
 .parttwofooter {
     display: flex;
+    padding: 20px 15%;
+}
+
+.elements-parttwofooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+}
+
+.partthreefooter {
+    background-color: var(--color_10);
+    color: var(--color_5);
+    padding: 20px 15%
 }
